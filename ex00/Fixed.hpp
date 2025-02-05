@@ -6,7 +6,7 @@
 /*   By: armitite <armitite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 18:28:00 by armitite          #+#    #+#             */
-/*   Updated: 2025/02/04 20:28:30 by armitite         ###   ########.fr       */
+/*   Updated: 2025/02/05 18:58:41 by armitite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ public:
 private:
 
 	int					_nbr;
-	const static int	_nbr_bits = 8;	
+	const static int	bits = 8;	
 };
 
 #endif
