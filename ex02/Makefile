@@ -1,22 +1,26 @@
 NAME = ex02
-CC = g++
-CFLAGS = -Wall -Wextra -Werror -std=c++98 -O3
+CC = c++
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -O3 -fsanitize=address -g
 
 RM = rm -rf
 
-OBJ = main.cpp Fixed.cpp
+SRCS = main.cpp Fixed.cpp
+OBJS = $(SRCS:.cpp=.o)
 
-all : $(NAME)
+all: $(NAME)
 
-$(NAME) : $(OBJ)
+$(NAME): $(OBJS)
 	@echo "\033[0;33m\nCOMPILING ex02...\n"
-	@$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 	@echo "\033[1;32m./ex02 created\n"
 
-clean :
-	$(RM) ex02
+%.o: %.cpp
+	@$(CC) $(CFLAGS) -c $< -o $@
 
-fclean : clean
-	$(RM) ex02
+clean:
+	$(RM) $(OBJS)
 
-re : fclean all
+fclean: clean
+	$(RM) $(NAME) ex02
+
+re: fclean all
