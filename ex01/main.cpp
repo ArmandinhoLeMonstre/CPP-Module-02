@@ -6,7 +6,7 @@
 /*   By: armitite <armitite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:49:12 by armitite          #+#    #+#             */
-/*   Updated: 2025/02/05 19:50:05 by armitite         ###   ########.fr       */
+/*   Updated: 2025/02/17 12:51:58 by armitite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #include <iostream>
 #include <ostream>
 
-#include <iostream>
 int main( void ) 
 {
 	Fixed a;

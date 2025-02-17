@@ -6,7 +6,7 @@
 /*   By: armitite <armitite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 20:20:16 by armitite          #+#    #+#             */
-/*   Updated: 2025/02/06 15:10:34 by armitite         ###   ########.fr       */
+/*   Updated: 2025/02/17 12:55:40 by armitite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ int main() {
     std::cout << "\n---- Testing Increment & Decrement Operators ----" << std::endl;
     Fixed e(1.0f);
 
-    std::cout << "e = " << e << std::endl; // Expected: 1.0
+    std::cout << "e = " << e << std::endl;
     std::cout << "++e = " << ++e << " (Expected: 1 + epsilon)" << std::endl;
     std::cout << "e++ = " << e++ << " (Expected: 1 + epsilon)" << std::endl;
     std::cout << "After e++: " << e << " (Expected: 1 + 2 * epsilon)" << std::endl;
