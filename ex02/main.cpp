@@ -6,7 +6,7 @@
 /*   By: armitite <armitite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 20:20:16 by armitite          #+#    #+#             */
-/*   Updated: 2025/02/17 12:55:40 by armitite         ###   ########.fr       */
+/*   Updated: 2025/02/17 16:56:48 by armitite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int main() {
     std::cout << "---- Testing Constructors ----" << std::endl;
     Fixed a(2.5f);
     Fixed b(2.0f);
-    Fixed c(a); // Copy constructor
+    Fixed c(a);
 
     std::cout << "a = " << a << std::endl; // Expected: 2.5
     std::cout << "b = " << b << std::endl; // Expected: 2.0

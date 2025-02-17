@@ -6,7 +6,7 @@
 /*   By: armitite <armitite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 20:15:17 by armitite          #+#    #+#             */
-/*   Updated: 2025/02/06 14:42:42 by armitite         ###   ########.fr       */
+/*   Updated: 2025/02/17 15:37:46 by armitite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ public:
 	
 	Fixed	&operator=(Fixed const &assig);
 
-	bool	operator==(const Fixed &assign) const;
-	bool	operator!=(const Fixed &assign) const;
 	bool	operator<(const Fixed &assign) const;
 	bool	operator>(const Fixed &assign) const;
 	bool	operator >= (const Fixed &assign) const;
 	bool	operator <= (const Fixed &assign) const;
+	bool	operator==(const Fixed &assign) const;
+	bool	operator!=(const Fixed &assign) const;
 
 	Fixed	operator+(const Fixed &assign) const;
 	Fixed	operator-(const Fixed &assign) const;
