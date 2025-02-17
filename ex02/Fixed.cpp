@@ -6,7 +6,7 @@
 /*   By: armitite <armitite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 20:15:15 by armitite          #+#    #+#             */
-/*   Updated: 2025/02/06 15:09:24 by armitite         ###   ########.fr       */
+/*   Updated: 2025/02/17 14:36:35 by armitite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,7 @@ Fixed::Fixed(void) {
 Fixed::Fixed(Fixed const &copy) {
 
 	std::cout << "Copy constructor called" << std::endl;
-	this->_nbr = copy.getRawBits();
-
+	*this = copy;
 	return ;
 }
 
